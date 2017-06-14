@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40da35"
+    android:orientation="vertical"
+    tools:context="com.example.nguyenminhtien.appbaothuc.MainActivity"
+    android:weightSum="1">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaa3c2"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_alignParentStart="true"
+        android:numbersTextColor="#2008f4"
+        android:headerBackground="#e984db"
+        android:background="#09acf2"
+        android:numbersSelectorColor="#ec0606"
+        android:layout_weight="0.48" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnHenGio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/timePicker2"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="27dp"
+            android:layout_weight="0.47"
+            android:background="@drawable/custom_button"
+            android:text="Hẹn Giờ" />
+
+        <TextView
+            android:layout_width="29dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/btnDungLai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtHienThi"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="27dp"
+            android:layout_weight="0.53"
+            android:background="@drawable/custom_button"
+            android:text="Dừng Lại" />
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/txtHienThi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnHenGio"
+            android:layout_centerHorizontal="true"
+            android:text=""
+            android:textColor="#da4080"
+            android:textSize="20dp"
+            android:gravity="center"/>
+
+
+</LinearLayout>
